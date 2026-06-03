@@ -206,10 +206,10 @@ html[lang="ru"] h1 {
 }
 
 .hero-subtitle {
-  margin: clamp(8px, 0.9vw, 12px) 0 0;
+  margin: clamp(14px, 1.35vw, 20px) 0 0;
   color: var(--purple-deep);
   font-size: clamp(1.25rem, 2.4vw, 1.85rem);
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.2;
   text-align: center;
 }
