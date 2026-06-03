@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leelauu | Coming Soon</title>
+    <meta
+      name="description"
+      content="Leelauu is launching in early Q3 2026. Join the waitlist for launch updates."
+    >
+    <link rel="icon" href="assets/mascot/mascot-pink.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" aria-label="Leelauu">
+        <a class="brand-link" href="/" aria-label="Leelauu home">
+          <img src="assets/logo/logo-purple.svg" alt="Leelauu" width="160" height="36">
+        </a>
+        <p class="launch-pill">Early Q3 2026</p>
+      </header>
+
+      <main class="hero">
+        <section class="hero-art" aria-labelledby="page-title">
+          <div class="brand-field" aria-hidden="true"></div>
+          <div class="mascot-wrap">
+            <img
+              class="mascot"
+              src="assets/mascot/mascot-pink.svg"
+              alt=""
+              width="292"
+              height="285"
+            >
+            <h1 id="page-title">Coming<br>Soon</h1>
+            <p class="hero-subtitle">Next gen parental control</p>
+          </div>
+        </section>
+
+        <section class="signup" aria-labelledby="signup-title">
+          <h2 id="signup-title">Join the launch list</h2>
+          <p class="intro">
+            Leave your name and email, and we will send the first update when Leelauu opens.
+          </p>
+
+          <form
+            class="waitlist-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            data-waitlist-form
+          >
+            <input type="hidden" name="access_key" value="6fe3c66e-00ed-4de1-a14d-f8bc1c59b067">
+            <input type="hidden" name="subject" value="New Leelauu coming soon signup">
+            <input type="hidden" name="from_name" value="Leelauu Coming Soon">
+            <input type="hidden" name="source" value="Leelauu static coming soon page">
+            <label class="bot-field">
+              <span>Leave this field empty</span>
+              <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
+            </label>
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Your name"
+                required
+              >
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              >
+            </div>
+
+            <button type="submit">
+              Notify me
+              <span aria-hidden="true">-></span>
+            </button>
+
+            <p class="form-status" role="status" aria-live="polite" data-form-status>
+              Launching at the beginning of Q3 2026.
+            </p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <img src="assets/logo/logo-white.svg" alt="Leelauu" width="112" height="25">
+        <p>© 2026 Leelauu Software OÜ. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
