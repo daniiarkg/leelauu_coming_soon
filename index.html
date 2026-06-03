@@ -39,7 +39,27 @@
         <a class="brand-link" href="/" aria-label="Leelauu home">
           <img src="assets/logo/logo-purple.svg" alt="Leelauu" width="160" height="36">
         </a>
-        <p class="launch-pill">Early Q3 2026</p>
+        <div class="header-actions">
+          <p class="launch-pill" data-i18n="launchPill">Early Q3 2026</p>
+          <div class="language-switch" role="group" aria-label="Language">
+            <button
+              class="language-option"
+              type="button"
+              data-lang-option="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              class="language-option"
+              type="button"
+              data-lang-option="ru"
+              aria-pressed="false"
+            >
+              RU
+            </button>
+          </div>
+        </div>
       </header>
 
       <main class="hero">
@@ -53,15 +73,18 @@
               width="292"
               height="285"
             >
-            <h1 id="page-title">Coming<br>Soon</h1>
-            <p class="hero-subtitle">Next gen parental control</p>
+            <h1 id="page-title">
+              <span data-i18n="heroTitleLine1">Coming</span><br>
+              <span data-i18n="heroTitleLine2">Soon</span>
+            </h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">Next gen parental control</p>
           </div>
         </section>
 
         <section class="signup" aria-labelledby="signup-title">
-          <h2 id="signup-title">Join the launch list</h2>
-          <p class="intro">
-            Leave your name and email, and we will send the first update when Leelauu opens.
+          <h2 id="signup-title" data-i18n="signupTitle">Join the launch list</h2>
+          <p class="intro" data-i18n="intro">
+            Leave your name, email, and phone, and we will send the first update when Leelauu opens.
           </p>
 
           <form
@@ -74,53 +97,63 @@
             <input type="hidden" name="subject" value="New Leelauu coming soon signup">
             <input type="hidden" name="from_name" value="Leelauu Coming Soon">
             <input type="hidden" name="source" value="Leelauu static coming soon page">
+            <input type="hidden" name="language" value="en" data-language-field>
             <label class="bot-field">
-              <span>Leave this field empty</span>
+              <span data-i18n="botField">Leave this field empty</span>
               <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off">
             </label>
 
             <div class="field">
-              <label for="name">Name</label>
+              <label for="name" data-i18n="nameLabel">Name</label>
               <input
                 id="name"
                 name="name"
                 type="text"
                 autocomplete="name"
                 placeholder="Your name"
+                data-i18n-placeholder="namePlaceholder"
                 required
               >
             </div>
 
             <div class="field">
-              <label for="email">Email</label>
+              <label for="email" data-i18n="emailLabel">Email</label>
               <input
                 id="email"
                 name="email"
                 type="email"
                 autocomplete="email"
                 placeholder="you@example.com"
+                data-i18n-placeholder="emailPlaceholder"
                 required
               >
             </div>
 
             <div class="field">
-              <label for="phone">Phone</label>
+              <label for="phone" data-i18n="phoneLabel">Phone</label>
               <input
                 id="phone"
                 name="phone"
                 type="tel"
                 autocomplete="tel"
                 placeholder="+372 5555 1234"
+                data-i18n-placeholder="phonePlaceholder"
                 required
               >
             </div>
 
             <button type="submit">
-              Notify me
-              <span aria-hidden="true">-></span>
+              <span data-i18n="submitCta">Notify me</span>
+              <span class="button-arrow" aria-hidden="true">-></span>
             </button>
 
-            <p class="form-status" role="status" aria-live="polite" data-form-status>
+            <p
+              class="form-status"
+              role="status"
+              aria-live="polite"
+              data-form-status
+              data-i18n="launchStatus"
+            >
               Launching at the beginning of Q3 2026.
             </p>
           </form>
@@ -129,7 +162,7 @@
 
       <footer class="site-footer">
         <img src="assets/logo/logo-white.svg" alt="Leelauu" width="112" height="25">
-        <p>© 2026 Leelauu Software OÜ. All rights reserved.</p>
+        <p data-i18n="footerCopyright">© 2026 Leelauu Software OÜ. All rights reserved.</p>
       </footer>
     </div>
 
